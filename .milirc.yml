@@ -1,0 +1,4 @@
+repository: https://github.com/Val-istar-Guo/mili-template.git
+version: 0.1.0-alpha.2
+mili:
+  version: 1.0.1
