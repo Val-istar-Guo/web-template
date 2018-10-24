@@ -1,23 +1,5 @@
 {
   "name": "web-template",
-  "engines": {
-    "node": ">=8.9.4"
-  },
-  "scripts": {
-    "ca": "git add -A && git-cz -av",
-    "commit": "git-cz",
-    "release": "standard-version",
-    "upgrade": "mili upgrade"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^7.2.0",
-    "@commitlint/config-conventional": "^7.1.2",
-    "commitizen": "^3.0.2",
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.1.1",
-    "standard-version": "^4.4.0",
-    "mili": "1.0.1"
-  },
   "description": "website template",
   "version": "0.0.1",
   "main": "index.js",
@@ -37,5 +19,23 @@
   "bugs": {
     "url": "https://github.com/Val-istar-Guo/web-template/issues"
   },
-  "homepage": "https://github.com/Val-istar-Guo/web-template#readme"
+  "homepage": "https://github.com/Val-istar-Guo/web-template#readme",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "scripts": {
+    "ca": "git add -A && git-cz -av",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "upgrade": "mili upgrade"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.0",
+    "@commitlint/config-conventional": "^7.1.2",
+    "commitizen": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.1.1",
+    "standard-version": "^4.4.0",
+    "mili": "1.0.1"
+  }
 }
