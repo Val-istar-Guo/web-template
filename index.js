@@ -66,8 +66,8 @@ exports.rules = [
   {
     path: 'README.md.mustache',
     handlers: [
+      core => core.extractArea('content', '<!-- custom -->'),
       'mustache',
-      // core => core.extractHtmlCustomArea('custom')
     ],
   },
 ]
