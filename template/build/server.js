@@ -22,7 +22,7 @@ export default class Server {
     // NOTE: should declare in constructor. Don't need to use .bind(this)
     this.__renderMiddleware = async (ctx, next) => {
       if (this.__renderer) {
-        this.__renderer(ctx, next);
+        await this.__renderer(ctx, next);
       } else {
         ctx.body = '⌛️ WAITTING FOR COMPLIATION! REFRESH IN A MOMENT';
       }
