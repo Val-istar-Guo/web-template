@@ -14,7 +14,7 @@ export default class Server {
     this.__hmrMiddleware = null;
 
     // before server code compiled
-    this.__requestHandler = (req,res) => {
+    this.__requestHandler = (req, res) => {
       res.writeHead(200,{ 'content-type': 'text/plain' });
       res.write('waiting for server code compiled');
       res.end();
@@ -30,7 +30,7 @@ export default class Server {
 
     this.__server = http
       .createServer(this.__requestHandler)
-      .listen(port,host);
+      .listen(port, host);
 
     console.log(chalk.green(`🌏  The server run at ${host}:${port}`));
     console.log(chalk.green('⌛️  Wait for the code to compile...'));
