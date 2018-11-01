@@ -90,7 +90,7 @@ export default class Server {
     this.__requestHandler = server
       .use(async (ctx, next) => {
         if (!__hmrMiddleware) ctx.body = '⌛️ WAITTING FOR COMPLIATION! REFRESH IN A MOMENT';
-        else __hmrMiddleware(ctx, next)
+        else await __hmrMiddleware(ctx, next)
       })
       .use(__renderMiddleware)
       .callback();
