@@ -70,4 +70,9 @@ exports.rules = [
       'mustache',
     ],
   },
+
+  {
+    path: '.pm2rc.yml',
+    upgrade: 'exist',
+  },
 ]

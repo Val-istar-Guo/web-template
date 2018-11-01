@@ -19,6 +19,3 @@ views/index.*.html
 # Lock
 yarn.lock
 package-lock.json
-
-# test
-demo/

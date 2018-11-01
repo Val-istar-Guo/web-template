@@ -1,0 +1,6 @@
+user: user
+port: 0
+prod:
+  host: host
+test:
+  host: test.host

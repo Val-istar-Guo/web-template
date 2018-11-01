@@ -5,17 +5,22 @@
     "clean": "rm -rf ./dist/*",
     "premili:upgrade": "npm install mili@latest -D",
     "mili:upgrade": "mili upgrade",
+
     "build": "npm run clean & webpack",
     "build:prod": "NODE_ENV=production npm run build",
+
     "start": "node build/engine.js",
     "prestart:port": "NODE_ENV=production npm run build",
     "start:prod": "NODE_ENV=production node dist/server/bundle.js",
-    "setup": "node run setup:stage",
-    "setup:stage": "pm2 deploy ecosystem.config.js stage setup",
+
+    "setup": "node run setup:test",
+    "setup:test": "pm2 deploy ecosystem.config.js test setup",
     "setup:prod": "pm2 deploy ecosystem.config.js prod setup",
-    "deploy": "npm run deploy:stage",
-    "deploy:stage": "pm2 deploy ecosystem.config.js stage",
-    "deploy:prod": "pm2 deploy ecosystem.config.js prod",
+
+    "deploy": "npm run deploy:test",
+    "deploy:test": "pm2 deploy ./build/pm2.config.js test",
+    "deploy:prod": "pm2 deploy ./build/pm2.config.js prod",
+
     "analyzer": "NODE_ENV=production ANALYZER=true webpack",
     "ca": "git add -A && git-cz -av",
     "commit": "git-cz"

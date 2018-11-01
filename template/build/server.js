@@ -45,6 +45,7 @@ export default class Server {
         template: __template,
         bundle: __bundle,
         manifest: __manifest,
+        title: 'Test Service',
       });
     }
   }
