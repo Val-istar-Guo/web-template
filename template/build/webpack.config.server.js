@@ -1,10 +1,10 @@
 import path from 'path'
-import fs from 'fs'
 import env from 'detect-env'
 import nodeExternals from 'webpack-node-externals'
 
-import { dependencies } from '../package.json'
-import config from '../build.config'
+import loadBuildConfig from './loadBuildConfig'
+
+const config = loadBuildConfig()
 
 
 export default {

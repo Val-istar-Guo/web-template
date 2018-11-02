@@ -6,9 +6,10 @@ import nodeExternals from 'webpack-node-externals';
 import { VueSSRServerPlugin } from 'vue-ssr-webpack-plugin';
 
 import common from './webpack.config.common';
-import config from '../build.config'
+import loadBuildConfig from './loadBuildConfig'
 
 
+const config = loadBuildConfig()
 function emptyPackage(list) {
   return Object.keys(list).reduce((emptyList, alias) => ({
     ...emptyList,
@@ -23,7 +24,7 @@ export default merge(common, {
   output: { libraryTarget: 'commonjs2' },
 
   resolve: {
-    alias: { ...emptyPackage(config.nonIsomorphicModule) },
+    alias: { ...emptyPackage(config.ssrMockModules) },
   },
 
   plugins: [

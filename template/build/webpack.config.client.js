@@ -1,4 +1,3 @@
-import path from 'path'
 import webpack from 'webpack'
 import env from 'detect-env'
 import merge from 'webpack-merge'
@@ -6,9 +5,10 @@ import VueSSRClientPlugin from 'vue-server-renderer/client-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-import config from '../build.config'
+import loadBuildConfig from './loadBuildConfig';
 import common from './webpack.config.common'
 
+const config = loadBuildConfig()
 
 const plugins = [
   new VueSSRClientPlugin({
@@ -42,7 +42,7 @@ export default merge(common, {
 
   resolve: {
     alias: {
-      ...config.nonIsomorphicModule,
+      ...config.ssrMockModules,
     },
   },
 
