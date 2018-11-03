@@ -8,7 +8,7 @@ import loadBuildConfig from '../build/loadBuildConfig';
 import ssr from './middleware/vue-server-render';
 
 
-const { ssrFilename, manifestFilename } = loadBuildConfig();
+const { title, ssrFilename, manifestFilename } = loadBuildConfig();
 
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '0.0.0.0';
@@ -17,6 +17,7 @@ const clientDir = resolve(__dirname, '../client');
 server
   .use(staticServer(resolve(__dirname, '../client')))
   .use(ssr({
+    title,
     template: fs.readFileSync(join(clientDir, 'template.html'), 'utf8'),
     bundle: join(clientDir, ssrFilename),
     manifest: JSON.parse(fs.readFileSync(join(clientDir, manifestFilename), 'utf8')),

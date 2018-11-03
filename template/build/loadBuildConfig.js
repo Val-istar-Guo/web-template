@@ -1,11 +1,13 @@
 import cosmiconfig from 'cosmiconfig'
 import sa from 'sanitization'
-import { resolve } from 'path';
+import { resolve } from 'path'
+import { name } from '../package.json'
 
 
 const explore = cosmiconfig('build')
 
 const sanitize = sa.keys({
+  title: sa.string.defaulted(name),
   ssrFilename: sa.string.defaulted('vue-ssr-bundle.json'),
   manifestFilename: sa.string.defaulted('vue-ssr-manifest.json'),
   ssrMockModules: sa.object,
