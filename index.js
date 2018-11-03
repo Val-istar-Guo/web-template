@@ -45,6 +45,10 @@ exports.rules = [
     upgrade: 'keep',
   },
   {
+    path: 'server/index.js',
+    upgrade: 'exist',
+  },
+  {
     path: 'server/middleware/vue-server-render.js',
     upgrade: 'cover',
   },
@@ -54,8 +58,8 @@ exports.rules = [
   },
 
   {
-    path: 'build.config.js',
-    upgrade: 'keep',
+    path: '.buildrc.yml',
+    upgrade: 'exist',
   },
 
   {
