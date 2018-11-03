@@ -40,7 +40,7 @@ exports.rules = [
     handlers: [
       core => core.extractArea('header', '<!-- header -->'),
       core => core.extractArea('body', '<!-- body -->'),
-      'mustach',
+      'mustache',
     ],
   },
 
