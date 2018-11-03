@@ -20,22 +20,23 @@ Vue.mixin({
   }
 })
 
-const { app, store } = createApp()
+const { app, store, router } = createApp()
 
-if (window.__INITIAL_STATE__) {
-  store.replaceState(window.__INITIAL_STATE__)
-}
+if (window.__INITIAL_STATE__) store.replaceState(window.__INITIAL_STATE__)
 
-app.$mount('#app')
+router.onReady(() => {
+  app.$mount('#app', true)
 
-Vue.mixin({
-  beforeMount () {
-    const { initialData } = this.$options
-    if (initialData) {
-      initialData.call(this, {
-        store: this.$store,
-        route: this.$route,
-      })
-    }
-  },
+  Vue.mixin({
+    beforeMount () {
+      const { initialData } = this.$options
+      if (initialData) {
+        this.dataPromise = initialData.call(this, {
+          store: this.$store,
+          route: this.$route,
+        })
+      }
+    },
+  })
 })
+
