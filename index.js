@@ -51,7 +51,7 @@ exports.rules = [
   },
   {
     path: 'server/index.js',
-    upgrade: 'exist',
+    upgrade: 'cover',
   },
   {
     path: 'server/middleware/vue-server-render.js',
