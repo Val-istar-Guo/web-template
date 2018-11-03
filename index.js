@@ -35,8 +35,13 @@ exports.rules = [
     upgrade: 'cover',
   },
   {
-    path: 'client/template.html',
+    path: 'client/template.html.mustache',
     upgrade: 'cover',
+    handlers: [
+      core => core.extractArea('header', '<!-- header -->'),
+      core => core.extractArea('body', '<!-- body -->'),
+      'mustach',
+    ],
   },
 
 
