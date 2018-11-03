@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/Val-istar-Guo/web-template/compare/v0.1.3...v0.2.0) (2018-11-03)
+
+
+### Bug Fixes
+
+* load build config from .buildrc.yml ([64bf5e3](https://github.com/Val-istar-Guo/web-template/commit/64bf5e3))
+
+
+### Features
+
+* set the upgrade type for the 'server/index' file to cover ([e3f669c](https://github.com/Val-istar-Guo/web-template/commit/e3f669c))
+* support customize html template ([939be55](https://github.com/Val-istar-Guo/web-template/commit/939be55))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/Val-istar-Guo/web-template/compare/v0.1.2...v0.1.3) (2018-11-03)
 
