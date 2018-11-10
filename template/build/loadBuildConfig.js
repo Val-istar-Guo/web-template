@@ -29,7 +29,7 @@ export default () => {
   config = {
     ...config,
     alias: Object.entries(config.alias)
-      .map(([name, path]) => [name, resolve('../', __dirname, path)])
+      .map(([name, path]) => [name, resolve(__dirname, '../', path)])
       .reduce((obj, [key, value]) => ({
         ...obj,
         [key]: value,

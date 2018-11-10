@@ -32,7 +32,7 @@ if (process.env.ANALYZER) plugins.push(new BundleAnalyzerPlugin())
 
 export default merge(common, {
   entry: {
-    bundle: ['babel-polyfill', './client/entry-client'],
+    bundle: ['@babel/polyfill', './client/entry-client'],
   },
 
   output: {

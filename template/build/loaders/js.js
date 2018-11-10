@@ -1,14 +1,9 @@
 const babelLoader = {
   loader: 'babel-loader',
   options: {
-    presets: [[
-      'env',
-      {
-        useBuiltIns: true,
-        modules: false,
-        targets: { browser: ['>5%'] },
-      }
-    ]],
+    presets: [
+      ['@babel/preset-env', { useBuiltIns: 'entry' }],
+    ],
   },
 };
 

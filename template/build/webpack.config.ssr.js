@@ -18,7 +18,7 @@ function emptyPackage(list) {
 }
 
 export default merge(common, {
-  entry: ['babel-polyfill', './client/entry-ssr'],
+  entry: ['@babel/polyfill', './client/entry-ssr'],
   target: 'node',
   externals: nodeExternals({ whitelist: [/\.css$/, /\?vue&type=style/] }),
   output: { libraryTarget: 'commonjs2' },

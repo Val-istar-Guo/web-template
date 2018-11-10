@@ -6,8 +6,9 @@ import path from 'path';
 import env from 'detect-env';
 import webpack from 'webpack';
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
+import loadBuildConfig from './loadBuildConfig';
 
-import config from '../build.config'
+
 import cssLoader from './loaders/css'
 import jsLoader from './loaders/js'
 import fontLoader from './loaders/font'
@@ -15,6 +16,7 @@ import htmlLoader from './loaders/html'
 import vueLoader from './loaders/vue'
 
 
+const config = loadBuildConfig()
 // base client config
 export default {
   context: path.resolve(__dirname, '..'),

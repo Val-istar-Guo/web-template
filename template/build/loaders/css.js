@@ -1,4 +1,13 @@
-// this matches `<style module>`
+const postcssPresetEnv = require('postcss-preset-env');
+
+const postcssLoader = {
+  loader: 'postcss-loader',
+  options: {
+    ident: 'postcss',
+    plugins: () => [ postcssPresetEnv() ],
+  },
+}
+
 const cssModuleLoader = {
   resourceQuery: /module/,
   use: [
@@ -6,12 +15,13 @@ const cssModuleLoader = {
     {
       loader: 'css-loader',
       options: {
+        importLoaders: 1,
         modules: true,
         localIdentName: '[local]_[hash:base64:5]'
       }
     },
-    'postcss-loader',
-  ]
+    postcssLoader,
+  ],
 }
 
 // this matches plain `<style>` or `<style scoped>`
@@ -22,7 +32,7 @@ const cssLoader = {
       loader: 'css-loader',
       options: { importLoaders: 1 },
     },
-    'postcss-loader',
+    postcssLoader,
   ]
 }
 
