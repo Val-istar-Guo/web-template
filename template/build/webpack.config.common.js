@@ -14,6 +14,7 @@ import jsLoader from './loaders/js'
 import fontLoader from './loaders/font'
 import htmlLoader from './loaders/html'
 import vueLoader from './loaders/vue'
+import imageLoader from './loaders/image'
 
 
 const config = loadBuildConfig()
@@ -45,6 +46,7 @@ export default {
       cssLoader,
       fontLoader,
       htmlLoader,
+      imageLoader,
     ],
   },
 
