@@ -1,4 +1,4 @@
-import env from 'detect-env';
+import env from 'detect-env'
 
 export default env.detect({
   prod: undefined,
@@ -9,4 +9,4 @@ export default env.detect({
       'default-src': ['self', 'unsafe-eval', 'unsafe-inline', 'ws:', 'data:'],
     },
   },
-});
+})

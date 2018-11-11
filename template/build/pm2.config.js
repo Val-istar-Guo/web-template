@@ -1,7 +1,7 @@
 // PM2 Config
 const { join } = require('path')
 const sa = require('sanitization')
-const cosmiconfig = require('cosmiconfig');
+const cosmiconfig = require('cosmiconfig')
 const { name: APP_NAME, repository: REPO } = require('../package.json')
 
 

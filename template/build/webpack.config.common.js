@@ -2,11 +2,11 @@
  * NOTE webpack base config is the Duplicate code
  *      in webpack.config.ssr.js and webpack.config.client.js
  */
-import path from 'path';
-import env from 'detect-env';
-import webpack from 'webpack';
+import path from 'path'
+import env from 'detect-env'
+import webpack from 'webpack'
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
-import loadBuildConfig from './loadBuildConfig';
+import loadBuildConfig from './loadBuildConfig'
 
 
 import cssLoader from './loaders/css'
@@ -60,4 +60,4 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     }),
   ],
-};
+}

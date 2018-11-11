@@ -6,21 +6,21 @@ export default {
     getTitle: function () {
       return this.$slots.default
         .map(slot => slot.text)
-        .join('');
+        .join('')
     },
   },
 
   mounted: function () {
     if (process.env.WEB_CONTAINER !== 'ssr') {
-      const title = this.getTitle();
-      if (title) document.title = title;
+      const title = this.getTitle()
+      if (title) document.title = title
     }
   },
 
   created: function () {
     if (process.env.WEB_CONTAINER === 'ssr') {
-      const title = this.getTitle();
-      if (title) this.$ssrContext.title = title;
+      const title = this.getTitle()
+      if (title) this.$ssrContext.title = title
     }
   }
 }

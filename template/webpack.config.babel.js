@@ -1,7 +1,7 @@
-import server from './build/webpack.config.server.js';
-import client from './build/webpack.config.client.js';
-import ssr from './build/webpack.config.ssr.js';
+import server from './build/webpack.config.server.js'
+import client from './build/webpack.config.client.js'
+import ssr from './build/webpack.config.ssr.js'
 
-const configs = [server, client, ssr];
+const configs = [server, client, ssr]
 
-export default configs;
+export default configs
