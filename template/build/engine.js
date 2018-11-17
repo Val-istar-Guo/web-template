@@ -19,13 +19,12 @@ const readFile = (fs, file) => {
 }
 
 const Server = require('./server').default
+const { HOST, PORT } = require('../framework/constants')
 
 // init compiler
 const loadBuildConfig = require('./loadBuildConfig').default
 const { ssrFilename, manifestFilename } = loadBuildConfig()
 
-const PORT = process.env.PORT || 8080
-const HOST = process.env.HOST || '0.0.0.0'
 const server = new Server(PORT, HOST)
 
 
