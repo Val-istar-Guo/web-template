@@ -29,7 +29,7 @@ export default merge(common, {
 
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.CONTAINER': JSON.stringify('ssr'),
+      'process.env.WEB_CONTAINER': JSON.stringify('ssr'),
     }),
 
     new VueSSRServerPlugin({
