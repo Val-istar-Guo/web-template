@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/Val-istar-Guo/web-template/compare/v0.4.2...v0.5.0) (2018-11-19)
+
+
+### Bug Fixes
+
+* env prop name error ([b888a9e](https://github.com/Val-istar-Guo/web-template/commit/b888a9e))
+* ssr cannot request itself ([4540b1c](https://github.com/Val-istar-Guo/web-template/commit/4540b1c))
+* import path missing ([9e9cfbe](https://github.com/Val-istar-Guo/web-template/commit/9e9cfbe))
+* node request error ([9d38ccb](https://github.com/Val-istar-Guo/web-template/commit/9d38ccb))
+* use unitive host and port in dev env ([06b6de0](https://github.com/Val-istar-Guo/web-template/commit/06b6de0))
+
+
+### Features
+
+* upgrade koa-csp ([43c3b87](https://github.com/Val-istar-Guo/web-template/commit/43c3b87))
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/Val-istar-Guo/web-template/compare/v0.4.1...v0.4.2) (2018-11-15)
 
