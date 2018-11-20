@@ -23,8 +23,6 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-@import '../styles';
-
 article {
   padding-top: 60px;
 
