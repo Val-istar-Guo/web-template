@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/Val-istar-Guo/web-template/compare/v0.5.1...v0.5.2) (2018-11-20)
+
+
+### Bug Fixes
+
+* css import error ([f06de65](https://github.com/Val-istar-Guo/web-template/commit/f06de65))
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/Val-istar-Guo/web-template/compare/v0.5.0...v0.5.1) (2018-11-20)
 
