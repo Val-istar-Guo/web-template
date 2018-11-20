@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/Val-istar-Guo/web-template/compare/v0.5.0...v0.5.1) (2018-11-20)
+
+
+### Bug Fixes
+
+* image loader missing ([a144438](https://github.com/Val-istar-Guo/web-template/commit/a144438))
+* remove root css scoped ([be78637](https://github.com/Val-istar-Guo/web-template/commit/be78637))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/Val-istar-Guo/web-template/compare/v0.4.2...v0.5.0) (2018-11-19)
 
