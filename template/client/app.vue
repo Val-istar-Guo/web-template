@@ -12,6 +12,6 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 @import './styles/index.css';
 </style>
