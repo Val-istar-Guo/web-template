@@ -61,7 +61,7 @@ module.exports = {
       ref: 'origin/master',
       repo: REPO,
       path: config.prod.path,
-      'post-deploy': `npm i; npm run build:prod; pm2 startOrRestart ecosystem.config.js --only ${APP_NAME} --env prod`,
+      'post-deploy': `npm i; npm run build:prod; pm2 startOrRestart ./build/pm2.config.js --only ${APP_NAME} --env prod`,
     },
     test: {
       user: config.test.user,
@@ -69,7 +69,7 @@ module.exports = {
       ref: 'origin/test',
       repo: REPO,
       path: config.test.path,
-      'post-deploy': `npm i; npm run build:prod; pm2 startOrRestart ecosystem.config.js --only ${APP_NAME} --env dev`,
+      'post-deploy': `npm i; npm run build:prod; pm2 startOrRestart ./build/pm2.config.js --only ${APP_NAME} --env dev`,
     },
   },
 }

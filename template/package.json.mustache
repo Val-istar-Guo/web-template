@@ -14,8 +14,8 @@
     "start:prod": "NODE_ENV=production node dist/server/bundle.js",
 
     "setup": "node run setup:test",
-    "setup:test": "pm2 deploy ecosystem.config.js test setup",
-    "setup:prod": "pm2 deploy ecosystem.config.js prod setup",
+    "setup:test": "pm2 deploy ./build/pm2.config.js test setup",
+    "setup:prod": "pm2 deploy ./build/pm2.config.js prod setup",
 
     "deploy": "npm run deploy:test",
     "deploy:test": "pm2 deploy ./build/pm2.config.js test",
