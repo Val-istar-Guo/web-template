@@ -2,5 +2,7 @@ user: user
 port: 0
 prod:
   host: host
+  path:
 test:
   host: test.host
+  path:
