@@ -3,8 +3,6 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf ./dist/*",
-    "premili:upgrade": "npm install mili@latest -D",
-    "mili:upgrade": "mili upgrade",
 
     "build": "npm run clean & webpack",
     "build:prod": "NODE_ENV=production npm run build",
@@ -46,7 +44,6 @@
     "image-webpack-loader": "^4.5.0",
     "koa-webpack": "^5.0.2",
     "memory-fs": "^0.4.1",
-    "mili": "{{mili.version}}",
     "pm2": "^3.2.2",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.4.0",
