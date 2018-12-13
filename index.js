@@ -73,6 +73,10 @@ exports.rules = [
     handlers: ['mustache']
   },
   {
+    path: '.babelrc',
+    upgrade: 'merge',
+  },
+  {
     path: 'README.md.mustache',
     handlers: [
       core => core.extractArea('content', '<!-- custom -->'),
