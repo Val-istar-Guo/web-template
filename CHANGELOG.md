@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/Val-istar-Guo/web-template/compare/v0.5.4...v0.6.0) (2018-12-13)
+
+
+### Bug Fixes
+
+* **pm2:** pm2 config path missing ([43893b9](https://github.com/Val-istar-Guo/web-template/commit/43893b9))
+* missing important filed in pm2rc file ([3369884](https://github.com/Val-istar-Guo/web-template/commit/3369884))
+
+
+### Features
+
+* **dev-server:** hot reload debugging in local network ([04b1bf1](https://github.com/Val-istar-Guo/web-template/commit/04b1bf1))
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/Val-istar-Guo/web-template/compare/v0.5.3...v0.5.4) (2018-11-22)
 
