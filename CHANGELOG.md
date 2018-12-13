@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/Val-istar-Guo/web-template/compare/v0.6.0...v0.7.0) (2018-12-13)
+
+
+### Bug Fixes
+
+* header slot in template.html named error ([52edfa9](https://github.com/Val-istar-Guo/web-template/commit/52edfa9))
+* merge .babelrc ([a9cc578](https://github.com/Val-istar-Guo/web-template/commit/a9cc578))
+
+
+### Features
+
+* not lock the mili version ([1803f7d](https://github.com/Val-istar-Guo/web-template/commit/1803f7d))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/Val-istar-Guo/web-template/compare/v0.5.4...v0.6.0) (2018-12-13)
 
