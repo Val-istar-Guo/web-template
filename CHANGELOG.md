@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/Val-istar-Guo/web-template/compare/v0.8.0...v0.8.1) (2018-12-14)
+
+
+### Bug Fixes
+
+* append upgrade type for pwa files ([d2db54a](https://github.com/Val-istar-Guo/web-template/commit/d2db54a))
+* load service-worker on template script ([2ea0c3d](https://github.com/Val-istar-Guo/web-template/commit/2ea0c3d))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/Val-istar-Guo/web-template/compare/v0.7.0...v0.8.0) (2018-12-14)
 
