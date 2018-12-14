@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/Val-istar-Guo/web-template/compare/v0.7.0...v0.8.0) (2018-12-14)
+
+
+### Features
+
+* support pwa ([49affe7](https://github.com/Val-istar-Guo/web-template/commit/49affe7))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/Val-istar-Guo/web-template/compare/v0.6.0...v0.7.0) (2018-12-13)
 
