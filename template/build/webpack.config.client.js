@@ -19,10 +19,24 @@ const plugins = [
     'process.env.WEB_CONTAINER': JSON.stringify('browser'),
   }),
 
-  new CopyWebpackPlugin([{
-    from: './client/template.html',
-    to: 'template.html',
-  }]),
+  new CopyWebpackPlugin([
+    {
+      from: './client/template.html',
+      to: 'template.html',
+    },
+    {
+      from: './client/manifest.json',
+      to: 'manifest.json',
+    },
+    {
+      from: './client/service-worker.js',
+      to: 'service-worker.js',
+    },
+    {
+      from: './node_modules/sw-toolbox/sw-toolbox.js',
+      to: 'sw-toolbox.js',
+    },
+  ]),
 ]
 
 if (env.is.prod) plugins.push(new webpack.optimize.OccurrenceOrderPlugin())
