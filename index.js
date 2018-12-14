@@ -50,6 +50,7 @@ exports.rules = [
   {
     path: 'client/manifest.json.mustache',
     upgrade: 'exist',
+    handlers: ['mustache'],
   },
 
   {
