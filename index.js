@@ -43,7 +43,14 @@ exports.rules = [
       'mustache',
     ],
   },
-
+  {
+    path: 'client/service-worker.js',
+    upgrade: 'exist',
+  },
+  {
+    path: 'client/manifest.json.mustache',
+    upgrade: 'exist',
+  },
 
   {
     path: 'server',
