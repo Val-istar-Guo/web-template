@@ -91,6 +91,10 @@ exports.rules = [
       'mustache',
     ],
   },
+  {
+    path: 'tsconfig.json.mustache',
+    handlers: ['mustache'],
+  },
 
   {
     path: '.pm2rc.yml',

@@ -10,5 +10,5 @@ const babelLoader = {
 export default {
   test: /\.js$/,
   exclude: file => ( /node_modules/.test(file) && !/\.vue\.js/.test(file)),
-  use: [babelLoader],
+  use: [babelLoader, 'source-map-loader'],
 }
