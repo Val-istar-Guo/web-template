@@ -5,7 +5,7 @@ import VueSSRClientPlugin from 'vue-server-renderer/client-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-import loadBuildConfig from './loadBuildConfig'
+import loadBuildConfig from './load-build-config'
 import common from './webpack.config.common'
 
 const config = loadBuildConfig()

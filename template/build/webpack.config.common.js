@@ -6,7 +6,7 @@ import path from 'path'
 import env from 'detect-env'
 import webpack from 'webpack'
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
-import loadBuildConfig from './loadBuildConfig'
+import loadBuildConfig from './load-build-config'
 
 
 import cssLoader from './loaders/css'

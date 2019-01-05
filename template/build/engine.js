@@ -22,7 +22,7 @@ const Server = require('./server').default
 const { HOST, PORT } = require('../framework/constants')
 
 // init compiler
-const loadBuildConfig = require('./loadBuildConfig').default
+const loadBuildConfig = require('./load-build-config').default
 const { ssrFilename, manifestFilename } = loadBuildConfig()
 
 const server = new Server(PORT, HOST)

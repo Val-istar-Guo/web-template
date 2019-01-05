@@ -2,7 +2,7 @@ import path from 'path'
 import env from 'detect-env'
 import nodeExternals from 'webpack-node-externals'
 
-import loadBuildConfig from './loadBuildConfig'
+import loadBuildConfig from './load-build-config'
 
 const config = loadBuildConfig()
 

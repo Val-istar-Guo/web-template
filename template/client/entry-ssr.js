@@ -1,5 +1,5 @@
 // Server Side Render Bundle entry file
-import createApp from './createApp'
+import createApp from './create-app'
 
 
 async function loadComponentsInitialData({ components, store, router }) {

@@ -6,7 +6,7 @@ import nodeExternals from 'webpack-node-externals'
 import { VueSSRServerPlugin } from 'vue-ssr-webpack-plugin'
 
 import common from './webpack.config.common'
-import loadBuildConfig from './loadBuildConfig'
+import loadBuildConfig from './load-build-config'
 
 
 const config = loadBuildConfig()

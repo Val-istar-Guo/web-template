@@ -5,7 +5,7 @@ import staticServer from 'koa-static'
 import { HOST, PORT } from 'framework/constants'
 
 import server from './server'
-import loadBuildConfig from '../build/loadBuildConfig'
+import loadBuildConfig from '../build/load-build-config'
 import ssr from './middleware/vue-server-render'
 
 
