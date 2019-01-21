@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './app'
 import createRouter from './create-router'
 import createStore from './create-store'
+import './app-plugins'
 
 
 export default function () {
