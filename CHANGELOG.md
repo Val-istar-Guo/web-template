@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/Val-istar-Guo/web-template/compare/v0.11.0...v0.11.1) (2019-01-22)
+
+
+### Bug Fixes
+
+* the upgrade type of create-app, create-router, create-stroe files ([73cc25b](https://github.com/Val-istar-Guo/web-template/commit/73cc25b))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/Val-istar-Guo/web-template/compare/v0.10.0...v0.11.0) (2019-01-22)
 
