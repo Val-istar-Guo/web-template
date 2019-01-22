@@ -23,15 +23,15 @@ exports.rules = [
     upgrade: 'cover',
   },
   {
-    path: 'client/createApp.js',
+    path: 'client/create-app.js',
     upgrade: 'cover',
   },
   {
-    path: 'client/createStore.js',
+    path: 'client/create-store.js',
     upgrade: 'cover',
   },
   {
-    path: 'client/createRouter.js',
+    path: 'client/create-router.js',
     upgrade: 'cover',
   },
   {
