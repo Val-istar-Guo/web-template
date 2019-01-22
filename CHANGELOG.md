@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/Val-istar-Guo/web-template/compare/v0.10.0...v0.11.0) (2019-01-22)
+
+
+### Bug Fixes
+
+* cannot find framework module error ([50e43d3](https://github.com/Val-istar-Guo/web-template/commit/50e43d3))
+
+
+### Features
+
+* autonomous import vue plugin ([088b530](https://github.com/Val-istar-Guo/web-template/commit/088b530))
+* build-in vue-types ([44a3995](https://github.com/Val-istar-Guo/web-template/commit/44a3995))
+* support for pug in vue ([56616d7](https://github.com/Val-istar-Guo/web-template/commit/56616d7))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/Val-istar-Guo/web-template/compare/v0.9.2...v0.10.0) (2019-01-05)
 
