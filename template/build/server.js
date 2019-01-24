@@ -93,6 +93,7 @@ export default class Server {
     const { __server, __hmrMiddleware, __renderMiddleware, __requestHandler } = this
 
     __server.removeListener('request', __requestHandler)
+    process.emit('rebuild')
     this.__requestHandler = server
       .use(async (ctx, next) => {
         if (!__hmrMiddleware) ctx.body = '⌛️ WAITTING FOR COMPLIATION! REFRESH IN A MOMENT'
