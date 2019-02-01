@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/Val-istar-Guo/web-template/compare/v0.11.1...v0.12.0) (2019-02-01)
+
+
+### Bug Fixes
+
+* disable server code minize ([f5931d9](https://github.com/Val-istar-Guo/web-template/commit/f5931d9))
+
+
+### Features
+
+* add rebuild event ([3f76182](https://github.com/Val-istar-Guo/web-template/commit/3f76182))
+
+
+
 <a name="0.11.1"></a>
 ## [0.11.1](https://github.com/Val-istar-Guo/web-template/compare/v0.11.0...v0.11.1) (2019-01-22)
 
