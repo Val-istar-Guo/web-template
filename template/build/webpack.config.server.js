@@ -42,4 +42,12 @@ export default {
     alias: { ...config.alias },
     extensions: ['.js', '.ts'],
   },
+
+  optimization:{
+    /**
+     * minimize may have an impact on the orm framework
+     * e.g. typeorm
+     */
+    minimize: false,
+  },
 }
