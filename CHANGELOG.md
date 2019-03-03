@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Val-istar-Guo/web-template/compare/v0.12.0...v1.0.0) (2019-03-03)
+
+
+### Features
+
+* support mili@2 ([dc0a5a5](https://github.com/Val-istar-Guo/web-template/commit/dc0a5a5))
+
+
+### BREAKING CHANGES
+
+* Never support mili@1.x.If you want to use mili@1.x, ensure template version less
+than 1.0.0
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/Val-istar-Guo/web-template/compare/v0.11.1...v0.12.0) (2019-02-01)
 
