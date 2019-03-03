@@ -1,6 +1,8 @@
-# {{{name}}}
+# {{{project.name}}}
 
-[![dependencies](https://img.shields.io/david/{{repository.user}}/{{repository.name}}.svg?style=flat-square)](https://www.npmjs.com/package/{{name}})
+{{#project.repository}}
+[![dependencies](https://img.shields.io/david/{{project.repository.owner}}/{{project.repository.name}}.svg?style=flat-square)](https://www.npmjs.com/package/{{porject.name}})
+{{/project.repository}}
 
 
 <!-- custom -->{{{custom.content}}}<!-- custom -->
