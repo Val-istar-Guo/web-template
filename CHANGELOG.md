@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/Val-istar-Guo/web-template/compare/v1.0.0...v1.0.1) (2019-03-05)
+
+
+### Bug Fixes
+
+* app-plugins.js file not exist ([114851f](https://github.com/Val-istar-Guo/web-template/commit/114851f))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/Val-istar-Guo/web-template/compare/v0.12.0...v1.0.0) (2019-03-03)
 
