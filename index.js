@@ -35,6 +35,10 @@ exports.rules = [
     upgrade: 'cover',
   },
   {
+    path: 'client/app-plugins.js',
+    upgrade: 'exist',
+  },
+  {
     path: 'client/template.html.mustache',
     upgrade: 'cover',
     handlers: [
