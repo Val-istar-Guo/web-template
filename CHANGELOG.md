@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/Val-istar-Guo/web-template/compare/v1.0.1...v1.0.2) (2019-03-05)
+
+
+### Bug Fixes
+
+* client path of tsconfig includes error ([da702c6](https://github.com/Val-istar-Guo/web-template/commit/da702c6))
+* readme mustache filed name spelling mistake ([bf4426e](https://github.com/Val-istar-Guo/web-template/commit/bf4426e))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/Val-istar-Guo/web-template/compare/v1.0.0...v1.0.1) (2019-03-05)
 
