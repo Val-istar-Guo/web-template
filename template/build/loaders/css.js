@@ -1,4 +1,7 @@
-const postcssPresetEnv = require('postcss-preset-env');
+import postcssPresetEnv from 'postcss-preset-env'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import env from 'detect-env'
+
 
 const postcssLoader = {
   loader: 'postcss-loader',
@@ -27,7 +30,7 @@ const cssModuleLoader = {
 // this matches plain `<style>` or `<style scoped>`
 const cssLoader = {
   use: [
-    'vue-style-loader',
+    !env.is.prod ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
     {
       loader: 'css-loader',
       options: { importLoaders: 1 },
