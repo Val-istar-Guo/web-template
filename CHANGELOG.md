@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Val-istar-Guo/web-template/compare/v1.1.0...v1.2.0) (2019-03-07)
+
+
+### Features
+
+* configure environment variables in pm2rc ([e865356](https://github.com/Val-istar-Guo/web-template/commit/e865356))
+* upgrade dependencies ([b610115](https://github.com/Val-istar-Guo/web-template/commit/b610115))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/Val-istar-Guo/web-template/compare/v1.0.2...v1.1.0) (2019-03-06)
 
