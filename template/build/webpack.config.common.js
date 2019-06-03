@@ -56,7 +56,12 @@ export default {
   },
 
   resolve: {
-    alias: config.alias,
+    alias: {
+      ...config.alias,
+      '@framework': path.resolve(__dirname, '../framework/'),
+      '@client': path.resolve(__dirname, '../client'),
+      '@server': path.resolve(__dirname, '../server'),
+    },
     extensions: ['.js', '.vue', '.ts'],
   },
   plugins: [
