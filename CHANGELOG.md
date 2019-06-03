@@ -1,6 +1,20 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.0.0](https://github.com/Val-istar-Guo/web-template/compare/v1.2.0...v2.0.0) (2019-06-03)
+
+
+### chore
+
+* upgrade dependencies ([952d1d9](https://github.com/Val-istar-Guo/web-template/commit/952d1d9))
+
+
+### BREAKING CHANGES
+
+* Some package never support node@4
+
+
 
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/Val-istar-Guo/web-template/compare/v1.1.0...v1.2.0) (2019-03-07)
