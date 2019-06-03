@@ -31,12 +31,11 @@
     "release:first": "standard-version --first-release"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.2.0",
-    "@commitlint/config-conventional": "^7.1.2",
-    "commitizen": "^3.0.2",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.1.1",
-    "mili": "1.2.1",
-    "standard-version": "^4.4.0"
+    "husky": "^2.3.0",
+    "standard-version": "^6.0.1"
   }
 }
