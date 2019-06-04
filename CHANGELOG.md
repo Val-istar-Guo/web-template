@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/Val-istar-Guo/web-template/compare/v2.2.0...v2.3.0) (2019-06-04)
+
+
+### Features
+
+* reademe增加introduce片段 ([6c89c92](https://github.com/Val-istar-Guo/web-template/commit/6c89c92))
+
+
+
 ## [2.2.0](https://github.com/Val-istar-Guo/web-template/compare/v2.1.0...v2.2.0) (2019-06-04)
 
 
