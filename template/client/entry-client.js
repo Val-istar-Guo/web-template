@@ -4,7 +4,7 @@ import createApp from './create-app'
 
 
 Vue.mixin({
-  beforeRouteUpdate (to, from, next) {
+  beforeRouteUpdate(to, from, next) {
     const { initialData } = this.$options
 
     if (initialData) {
@@ -12,12 +12,12 @@ Vue.mixin({
         store: this.$store,
         route: to,
       })
-      .then(next)
-      .catch(next)
+        .then(next)
+        .catch(next)
     } else {
       next()
     }
-  }
+  },
 })
 
 const { app, store, router } = createApp()
@@ -28,7 +28,7 @@ router.onReady(() => {
   app.$mount('#app', true)
 
   Vue.mixin({
-    beforeMount () {
+    beforeMount() {
       const { initialData } = this.$options
       if (initialData) {
         this.dataPromise = initialData.call(this, {

@@ -1,4 +1,0 @@
-ssrFilename: 'vue-ssr-bundle.json'
-manifestFilename: 'vue-ssr-manifest.json'
-ssrMockModules:
-  # chart: charg.js

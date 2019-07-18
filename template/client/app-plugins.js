@@ -1,7 +1,14 @@
-import Vue from 'vue'
-// import Vuetify from 'vuetify'
-// import 'vuetify/dist/vuetify.min.css'
-// import 'material-design-icons-iconfont/dist/material-design-icons.css'
+/**
+ * This file used to import vue plugins
+ *
+ * Example:
+ *
+ * import Vue from 'vue'
+ * import Vuetify from 'vuetify'
+ * import 'vuetify/dist/vuetify.min.css'
+ * import 'material-design-icons-iconfont/dist/material-design-icons.css'
+ *
+ * Vue.use(Vuetify)
+ */
 
 
-// Vue.use(Vuetify)

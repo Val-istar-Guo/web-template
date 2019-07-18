@@ -5,15 +5,11 @@ import VueSSRClientPlugin from 'vue-server-renderer/client-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-import loadBuildConfig from './load-build-config'
 import common from './webpack.config.common'
 
-const config = loadBuildConfig()
 
 const plugins = [
-  new VueSSRClientPlugin({
-    filename: config.manifestFilename,
-  }),
+  new VueSSRClientPlugin({ filename: 'vue-ssr-manifest.json' }),
 
   new webpack.DefinePlugin({
     'process.env.WEB_CONTAINER': JSON.stringify('browser'),
@@ -52,12 +48,6 @@ export default merge(common, {
   output: {
     filename: env.is.prod ? '[name].[chunkhash:8].js' : '[name].[hash].js',
     chunkFilename: env.is.prod ? 'chunk.[name].[chunkhash:8].js' : 'chunk.[name].[hash].js',
-  },
-
-  resolve: {
-    alias: {
-      ...config.ssrMockModules,
-    },
   },
 
   optimization: {

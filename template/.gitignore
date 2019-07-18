@@ -9,13 +9,6 @@
 node_modules
 npm-debug.log*
 
-# Yarn
-yarn-error.log
-
 # Compile
 dist
 views/index.*.html
-
-# Lock
-yarn.lock
-package-lock.json

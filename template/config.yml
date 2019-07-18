@@ -1,0 +1,9 @@
+deploy:
+  user: user
+  port: 8080
+  prod:
+    host: host
+    path:
+  test:
+    host: test.host
+    path:

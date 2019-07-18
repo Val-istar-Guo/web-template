@@ -7,7 +7,6 @@ import env from 'detect-env'
 import webpack from 'webpack'
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import loadBuildConfig from './load-build-config'
 
 
 import cssLoader from './loaders/css'
@@ -20,7 +19,6 @@ import imageLoader from './loaders/image'
 import pugLoader from './loaders/pug'
 
 
-const config = loadBuildConfig()
 // base client config
 export default {
   context: path.resolve(__dirname, '..'),
@@ -36,14 +34,6 @@ export default {
 
   module: {
     rules: [
-      // BUG: expose-loader not work with config
-      // {
-      //   test: require.resolve('vuex'),
-      //   use: [{
-      //     loader: 'expose-loader',
-      //     options: 'vuex'
-      //   }]
-      // },
       vueLoader,
       tsLoader,
       jsLoader,
@@ -57,7 +47,6 @@ export default {
 
   resolve: {
     alias: {
-      ...config.alias,
       '@framework': path.resolve(__dirname, '../framework/'),
       '@client': path.resolve(__dirname, '../client'),
       '@server': path.resolve(__dirname, '../server'),

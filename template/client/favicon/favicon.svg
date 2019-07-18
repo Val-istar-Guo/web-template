@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="158px" viewBox="0 0 184 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-161.000000, -133.000000)">
+            <g id="Group" transform="translate(161.000000, 133.000000)">
+                <polygon id="Path" fill="#34495E" transform="translate(101.500000, 79.000000) scale(1, -1) translate(-101.500000, -79.000000) " points="38 158 123.5 0 165 -3.08347098e-15 70.5 158"></polygon>
+                <polygon id="Path" fill="#40B682" transform="translate(83.250000, 96.750000) scale(1, -1) translate(-83.250000, -96.750000) " points="38 131.5 92.5 35 128.5 35 57.5 158.5"></polygon>
+                <polygon id="Path" fill="#40B682" points="0 0 38 0 93 96.5 147.5 0 183.5 0 93 158"></polygon>
+                <polygon id="Path-2" fill="#34495E" points="38 0 70.5 0 94 39 113.5 0 147.5 0 93 96.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

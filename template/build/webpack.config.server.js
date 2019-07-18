@@ -1,21 +1,24 @@
 import path from 'path'
-import env from 'detect-env'
 import nodeExternals from 'webpack-node-externals'
+import webpackShellPlugin from 'webpack-shell-plugin'
 
-import loadBuildConfig from './load-build-config'
 
-const config = loadBuildConfig()
+const isProd = process.env.NODE_ENV === 'production'
 
+const plugins = []
+
+if (!isProd) {
+  const filepath = path.join(__dirname, '../dist/server/bundle.js')
+  const nodemonShell = `nodemon --watch ${filepath} ${filepath}`
+  plugins.push(new webpackShellPlugin({ onBuildEnd: [nodemonShell] }))
+}
 
 export default {
   context: path.resolve(__dirname, '..'),
 
-  entry: env.detect({
-    prod: './server',
-    default: './server/server',
-  }),
+  entry: './server',
 
-  mode: env.is.prod ? 'production' : 'development',
+  mode: isProd ? 'production' : 'development',
   target: 'node',
   externals: nodeExternals(),
 
@@ -26,7 +29,7 @@ export default {
 
   output: {
     path: path.resolve(__dirname, '../dist/server'),
-    filename: env.is.prod ? 'bundle.js' : 'bundle.[chunkhash:8].js',
+    filename: isProd ? 'bundle.[chunkhash:8].js' : 'bundle.js',
     chunkFilename: 'chunk.[chunkhash:8].js',
     libraryTarget: 'commonjs2',
   },
@@ -40,7 +43,6 @@ export default {
 
   resolve: {
     alias: {
-      ...config.alias,
       '@framework': path.resolve(__dirname, '../framework/'),
       '@client': path.resolve(__dirname, '../client'),
       '@server': path.resolve(__dirname, '../server')
@@ -55,4 +57,6 @@ export default {
      */
     minimize: false,
   },
+
+  plugins,
 }

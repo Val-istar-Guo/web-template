@@ -1,6 +1,6 @@
 {
-  "name": "{{project.name}}",
-  "short_name": "{{project.name}}",
+  "name": "t5",
+  "short_name": "t5",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#313131",

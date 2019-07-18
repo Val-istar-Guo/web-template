@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "es6",
+    "moduleResolution": "node",
+    "module": "commonjs",
     "target": "es6",
     "strict": true,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "noImplicitAny": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "baseUrl": "./",
     "paths": {
       "@framework/*": ["framework/*"],
@@ -15,5 +15,5 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["./client/**/*.ts", "./server/**/*.ts"]
+  "include": ["build/**/*.ts", "client/**/*.ts", "server/**/*.ts"]
 }

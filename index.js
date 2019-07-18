@@ -1,8 +1,5 @@
-// path of template files
 exports.path = './template'
-
-// mili version >= 2.0.0
-exports.engines = ">=2.0.0 <3.0.0"
+exports.engines = ">=3.5.0 <4.0.0"
 
 
 exports.rules = [
@@ -11,32 +8,17 @@ exports.rules = [
     upgrade: 'keep',
   },
   {
-    path: 'client/app.vue',
+    path: 'client/@(app.vue|entry-ssr.js|entry-client.js|create-app.js|create-store.js|create-router.js)',
     upgrade: 'cover'
   },
   {
-    path: 'client/entry-ssr.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'client/entry-client.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'client/create-app.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'client/create-store.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'client/create-router.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'client/app-plugins.js',
+    path: 'client/@(app-plugins.js|service-worker.js)',
     upgrade: 'exist',
+  },
+  {
+    path: 'client/manifest.json.mustache',
+    upgrade: 'exist',
+    handlers: ['mustache'],
   },
   {
     path: 'client/template.html.mustache',
@@ -48,36 +30,18 @@ exports.rules = [
     ],
   },
   {
-    path: 'client/service-worker.js',
-    upgrade: 'exist',
-  },
-  {
-    path: 'client/manifest.json.mustache',
-    upgrade: 'exist',
-    handlers: ['mustache'],
-  },
-
-  {
     path: 'server',
     upgrade: 'keep',
   },
   {
-    path: 'server/index.js',
+    path: 'server/index.ts',
     upgrade: 'cover',
   },
   {
-    path: 'server/middleware/vue-server-render.js',
-    upgrade: 'cover',
-  },
-  {
-    path: 'server/routes/favicon.js',
+    path: 'server/middleware',
     upgrade: 'cover',
   },
 
-  {
-    path: '.buildrc.yml',
-    upgrade: 'exist',
-  },
   {
     path: '.gitignore',
     upgrade: 'merge',
@@ -88,14 +52,10 @@ exports.rules = [
     handlers: ['mustache']
   },
   {
-    path: '.babelrc',
-    upgrade: 'merge',
-  },
-  {
     path: 'README.md.mustache',
     handlers: [
-      core => core.extractArea('content', '<!-- custom -->'),
       core => core.extractArea('introduce', '<!-- introduce -->'),
+      core => core.extractArea('more', '<!-- more -->'),
       'mustache',
     ],
   },
@@ -103,9 +63,8 @@ exports.rules = [
     path: 'tsconfig.json.mustache',
     handlers: ['mustache'],
   },
-
   {
-    path: '.pm2rc.yml',
+    path: 'config.yml',
     upgrade: 'exist',
   },
 ]

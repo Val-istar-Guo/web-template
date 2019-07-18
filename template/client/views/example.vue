@@ -1,7 +1,7 @@
 <template>
   <div>
     <article>
-      <h1>EXAMPLATE PAGE OF VUE-KOA BOILERPLATE</h1>
+      <h1>EXAMLATE PAGE OF VUE-KOA BOILERPLATE</h1>
       <p>It's time to start doing what you want to do.</p>
       <nav>
         <router-link class="router-link" to='/introduce'>Introduce</router-link>
