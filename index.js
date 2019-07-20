@@ -34,7 +34,7 @@ exports.rules = [
     upgrade: 'keep',
   },
   {
-    path: 'server/index.ts',
+    path: 'server/@(index|create-server).ts',
     upgrade: 'cover',
   },
   {
