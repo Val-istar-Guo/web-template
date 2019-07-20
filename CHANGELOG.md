@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/Val-istar-Guo/web-template/compare/v2.3.1...v2.3.2) (2019-07-20)
+
+
+### Bug Fixes
+
+* missing create-server.ts ([cbabdd8](https://github.com/Val-istar-Guo/web-template/commit/cbabdd8))
+
+
+
 ### [2.3.1](https://github.com/Val-istar-Guo/web-template/compare/v2.3.0...v2.3.1) (2019-07-20)
 
 
