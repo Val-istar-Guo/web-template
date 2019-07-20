@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/Val-istar-Guo/web-template/compare/v2.3.0...v2.3.1) (2019-07-20)
+
+
+### Bug Fixes
+
+* ts cannot find node_modules packages ([0ce5250](https://github.com/Val-istar-Guo/web-template/commit/0ce5250))
+
+
+
 ## [2.3.0](https://github.com/Val-istar-Guo/web-template/compare/v2.2.0...v2.3.0) (2019-06-04)
 
 
