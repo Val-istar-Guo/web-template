@@ -19,8 +19,6 @@ import imageLoader from './loaders/image'
 import pugLoader from './loaders/pug'
 
 
-console.log('****************************')
-console.log(path.resolve(__dirname, '../../client'))
 // base client config
 export default {
   context: path.resolve(__dirname, '..'),
