@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.3](https://github.com/Val-istar-Guo/web-template/compare/v2.3.2...v2.3.3) (2019-07-20)
+
+
+### Bug Fixes
+
+* build should be prod ([f6699a9](https://github.com/Val-istar-Guo/web-template/commit/f6699a9))
+
+
+
 ### [2.3.2](https://github.com/Val-istar-Guo/web-template/compare/v2.3.1...v2.3.2) (2019-07-20)
 
 
