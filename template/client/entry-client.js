@@ -22,6 +22,7 @@ Vue.mixin({
 
 const { app, store, router } = createApp()
 
+// eslint-disable-next-line no-undef
 if (window.__INITIAL_STATE__) store.replaceState(window.__INITIAL_STATE__)
 
 router.onReady(() => {

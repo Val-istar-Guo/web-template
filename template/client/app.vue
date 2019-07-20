@@ -11,7 +11,3 @@ import './components'
 export default {
 }
 </script>
-
-<style lang="postcss">
-@import './styles/index.css';
-</style>

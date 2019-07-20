@@ -6,10 +6,10 @@ import routes from './routes'
 
 Vue.use(VueRouter)
 
-export default function () {
- return new VueRouter({
-   mode: 'history',
-   linkActiveClass: 'active',
-   routes,
- })
+export default function() {
+  return new VueRouter({
+    mode: 'history',
+    linkActiveClass: 'active',
+    routes,
+  })
 }

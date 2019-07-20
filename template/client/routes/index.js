@@ -1,21 +1,10 @@
-import Example from '../views/example'
+import Root from '../views/root.vue'
 
 
 export default [
   {
     path: '/',
-    component: Example,
-    alias: ['/home'],
-    children: [
-      {
-        path: '',
-        alias: ['introduce'],
-        component: () => import('../views/introduce'),
-      },
-      {
-        path: 'test',
-        component: () => import('../views/test'),
-      },
-    ],
+    component: Root,
+    children: [],
   },
 ]

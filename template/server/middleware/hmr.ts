@@ -7,6 +7,9 @@ export default async(): Promise<Middleware> => {
   const { default: webpack } = await import('webpack')
   const { default: webpackConfig } = await import('../../build/webpack.config.client')
   webpackConfig.context = resolve(webpackConfig.context, '../')
+  webpackConfig.resolve.alias['@client'] = resolve(webpackConfig.context, 'client')
+  webpackConfig.resolve.alias['@framework'] = resolve(webpackConfig.context, 'framework')
+  webpackConfig.resolve.alias['@server'] = resolve(webpackConfig.context, 'server')
 
   const compiler = webpack(webpackConfig)
 

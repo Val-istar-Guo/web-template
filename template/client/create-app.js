@@ -7,14 +7,14 @@ import createStore from './create-store'
 import './app-plugins'
 
 
-export default function () {
+export default function() {
   const router = createRouter()
   const store = createStore()
 
   const app = new Vue({
     router,
     store,
-    render: (h) =>h(App),
+    render: h => h(App),
   })
 
   return { app, store, router }

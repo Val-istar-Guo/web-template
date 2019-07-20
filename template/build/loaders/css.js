@@ -21,14 +21,14 @@ const cssModuleLoader = {
         importLoaders: 1,
         modules: true,
         localIdentName: '[local]_[hash:base64:5]'
-      }
+      },
     },
     postcssLoader,
   ],
 }
 
 // this matches plain `<style>` or `<style scoped>`
-const cssLoader = {
+const normalCssLoader = {
   use: [
     !env.is.prod ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
     {
@@ -39,7 +39,20 @@ const cssLoader = {
   ]
 }
 
+const stylusLoader = {
+  test: /\.styl$/,
+  use: [
+    'vue-style-loader',
+    {
+      loader: 'css-loader',
+      options: { importLoaders: 1 },
+    },
+    'stylus-loader',
+  ],
+}
+
+
 export default {
-  test: /\.(css|postcss)$/,
-  oneOf: [cssModuleLoader, cssLoader],
+  test: /\.(css|postcss|styl)$/,
+  oneOf: [cssModuleLoader, normalCssLoader, stylusLoader],
 }
