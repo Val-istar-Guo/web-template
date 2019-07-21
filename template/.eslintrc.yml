@@ -48,7 +48,7 @@ rules:
         - PrimaryGeneratedColumn
   no-lonely-if: error
   no-console: off
-  multiline-comment-style: error
+  multiline-comment-style: off
   object-shorthand: error
   prefer-const: error
   prefer-spread: error
