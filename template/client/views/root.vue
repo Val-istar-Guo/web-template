@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <document-title>全栈Web框架</document-title>
-    <v-toolbar color="white" app>
+    <v-app-bar color="white" app>
       <v-toolbar-title>全栈Web框架</v-toolbar-title>
-    </v-toolbar>
+    </v-app-bar>
 
     <v-content>
       <v-container fluid>

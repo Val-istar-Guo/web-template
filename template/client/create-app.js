@@ -2,20 +2,16 @@ import 'normalize.css'
 import Vue from 'vue'
 
 import App from './app'
-import createRouter from './create-router'
-import createStore from './create-store'
-import './app-plugins'
+import createPlugins from './plugins'
 
 
 export default function() {
-  const router = createRouter()
-  const store = createStore()
+  const plugins = createPlugins()
 
   const app = new Vue({
-    router,
-    store,
+    ...plugins,
     render: h => h(App),
   })
 
-  return { app, store, router }
+  return { ...plugins, app }
 }

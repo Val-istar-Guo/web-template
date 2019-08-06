@@ -44,6 +44,7 @@ rules:
         - UpdateDateColumn
         - OneToMany
         - OneToOne
+        - ManyToOne
         - JoinColumn
         - PrimaryGeneratedColumn
   no-lonely-if: error
